@@ -1,0 +1,8 @@
+<h1 (mouseenter)="cambiaColore()" (mouseleave)="rimuoviColore()" #text>
+    On mouse hover, renderer2 is going to apply a css class
+</h1>
+<p>
+    Rendered2 provide a layer between the DOM and the element (main difference with nativeElement).
+    Is the correct way to Angular's DOM manipulation, because nativeElement only works in browser, NOT in service
+    worker, desktop app, and and don’t sanitize the data, so expose the app to XSS.
+</p>
